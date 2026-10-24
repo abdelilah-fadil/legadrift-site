@@ -16,16 +16,16 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#FAF7F3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#201B16" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#0B1F3A">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--band)"/><rect x="6" y="8" width="16" height="3" rx="1.5" fill="var(--band-text)"/><rect x="6" y="14.5" width="12" height="3" rx="1.5" fill="var(--band-text)"/><rect x="12" y="21" width="14" height="3" rx="1.5" fill="var(--band-accent)"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+    <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#FFC93C"/><rect x="7" y="9" width="14" height="3" rx="1.5" fill="#0B1F3A"/><rect x="7" y="14.5" width="10" height="3" rx="1.5" fill="#0B1F3A"/><rect x="12" y="20" width="13" height="3" rx="1.5" fill="#0B1F3A"/></svg><span>Lega<span class="drift">Drift</span></span></a>
     <nav aria-label="Navigation principale">
       <ul class="nav-links">
         <li><a href="produit.html">Produit</a></li>
@@ -38,19 +38,45 @@
   </div>
 </header>
 <main id="contenu">
-<div class="wrap hero">
-  <div class="hero-text">
-    <span class="eyebrow">Une source mainframe, plusieurs cibles</span>
-    <h1>Migrez votre patrimoine mainframe vers une ou plusieurs cibles, avec la preuve que rien ne s'est perdu.</h1>
-    <p class="lede">LegaDrift est un outil de migration depuis le mainframe. Il lit votre patrimoine, explique en langage métier ce que fait chaque traitement et conduit chaque lot vers sa cible : une application vers Java, une autre vers .NET, des données vers une nouvelle base. À chaque étape, chaque affirmation garde sa preuve.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="contact.html">Parler de votre projet</a>
-      <a class="btn btn-ghost" href="produit.html">Découvrir le produit</a>
+<section class="hero-band">
+  <div class="wrap hero">
+    <div class="hero-text">
+      <span class="eyebrow">Une source mainframe, plusieurs cibles</span>
+      <h1>Migrez votre patrimoine mainframe vers une ou plusieurs cibles, avec la preuve que rien ne s'est perdu.</h1>
+      <p class="lede">LegaDrift est un outil de migration depuis le mainframe. Il lit votre patrimoine, explique en langage métier ce que fait chaque traitement et conduit chaque lot vers sa cible : une application vers Java, une autre vers .NET, des données vers une nouvelle base. À chaque étape, chaque affirmation garde sa preuve.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contact.html">Parler de votre projet</a>
+        <a class="btn btn-ghost" href="produit.html">Découvrir le produit</a>
+      </div>
     </div>
-  </div>
 
-  <figure class="listing" aria-label="Exemple : un extrait de programme COBOL et ce que LegaDrift en dit">
-    <div class="listing-bar"><span>CALCECH.cbl</span><span>exemple</span></div>
+    <figure class="fan" role="img" aria-label="Schéma : un patrimoine mainframe conduit vers plusieurs cibles, Java, .NET, une nouvelle base de données, un cloud public ou privé ou un autre mainframe">
+      <div class="fan-source"><span class="fan-k">Source</span><strong>Patrimoine mainframe</strong><span class="fan-tech">COBOL · JCL · Db2<br>CICS · IMS · VSAM<br>PL/I · RPG</span></div>
+      <div class="fan-links" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <ul class="fan-targets">
+        <li><strong>Java</strong><span>une application</span></li>
+        <li><strong>.NET</strong><span>une autre application</span></li>
+        <li><strong>Nouvelle base</strong><span>les données</span></li>
+        <li><strong>Cloud public ou privé</strong><span>ou un autre mainframe</span></li>
+      </ul>
+    </figure>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="reading">
+    <div class="reading-text">
+      <span class="eyebrow">Exemple de lecture</span>
+      <h2>Ce qui est prouvé porte sa source. Ce qui est supposé attend qu'une personne le valide.</h2>
+      <div class="listing-out">
+        <div class="row"><span class="k">Lancé par</span><span>job FACTMENS, étape STEP030 <span class="status status-prouve">prouvé · JCL l. 42</span></span></div>
+        <div class="row"><span class="k">Lit</span><span>table TARIF (Db2) <span class="status status-prouve">prouvé · l. 000330</span></span></div>
+        <div class="row"><span class="k">Règle</span><span>remise de 5 % au-delà de trois contrats <span class="status status-suppose">supposé · à valider</span></span></div>
+        <div class="row"><span class="k">Domaine</span><span>Facturation <span class="status status-valide">validé</span></span></div>
+      </div>
+    </div>
+    <figure class="listing" aria-label="Exemple : un extrait de programme COBOL">
+      <div class="listing-bar"><span>CALCECH.cbl</span><span>exemple</span></div>
 <pre><span class="ln">000310</span>    PROCEDURE DIVISION.
 <span class="ln">000320</span>    0000-CALCUL-ECHEANCE.
 <span class="hl"><span class="ln">000330</span>        EXEC SQL SELECT TAUX INTO :WS-TAUX</span>
@@ -59,17 +85,11 @@
 <span class="ln">000360</span>        IF WS-NB-CONTRATS &gt; 3
 <span class="ln">000370</span>           COMPUTE WS-REMISE = WS-MONTANT * 0.05
 <span class="ln">000380</span>        END-IF.</pre>
-    <div class="listing-out">
-      <div class="row"><span class="k">Lancé par</span><span>job FACTMENS, étape STEP030 <span class="status status-prouve">prouvé · JCL l. 42</span></span></div>
-      <div class="row"><span class="k">Lit</span><span>table TARIF (Db2) <span class="status status-prouve">prouvé · l. 000330</span></span></div>
-      <div class="row"><span class="k">Règle</span><span>remise de 5 % au-delà de trois contrats <span class="status status-suppose">supposé · à valider</span></span></div>
-      <div class="row"><span class="k">Domaine</span><span>Facturation <span class="status status-valide">validé</span></span></div>
-    </div>
-    <figcaption class="listing-caption">Ce qui est prouvé porte sa source. Ce qui est supposé attend qu'une personne le valide.</figcaption>
-  </figure>
+    </figure>
+  </div>
 </div>
 
-<section class="section band">
+<section class="section">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">Notre offre</span>
@@ -77,14 +97,17 @@
     </div>
     <div class="pillars">
       <div class="pillar">
+        <span class="pillar-mark" aria-hidden="true">1</span>
         <h3>La parité, démontrée</h3>
         <p>Le nouveau système doit faire ce que faisait l'ancien. LegaDrift relève les règles de l'existant, compare les sorties que les deux systèmes produisent et garde la trace de ce qui a été vérifié, par qui et quand.</p>
       </div>
       <div class="pillar">
+        <span class="pillar-mark" aria-hidden="true">n</span>
         <h3>Une source, plusieurs cibles</h3>
         <p>Un même patrimoine peut partir vers plusieurs cibles : Java, .NET, une nouvelle base de données, un cloud public ou privé, un autre mainframe. LegaDrift ne vend aucune cible et ne vous lie à aucun fournisseur.</p>
       </div>
       <div class="pillar">
+        <span class="pillar-mark" aria-hidden="true">→</span>
         <h3>De bout en bout</h3>
         <p>De la cartographie de l'existant à la bascule, un seul projet réunit l'analyse, la conception de la cible, la migration des données et la recette.</p>
       </div>
@@ -131,7 +154,7 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section band">
   <div class="wrap">
     <div class="section-head">
       <span class="eyebrow">Où tourne l'analyse</span>
@@ -147,7 +170,7 @@
   </div>
 </section>
 
-<section class="section band cta-band">
+<section class="cta-band">
   <div class="wrap cta-box">
     <div style="display:grid; gap:10px">
       <h2>Un patrimoine mainframe à migrer, en partie ou en totalité ?</h2>
@@ -161,7 +184,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--band)"/><rect x="6" y="8" width="16" height="3" rx="1.5" fill="var(--band-text)"/><rect x="6" y="14.5" width="12" height="3" rx="1.5" fill="var(--band-text)"/><rect x="12" y="21" width="14" height="3" rx="1.5" fill="var(--band-accent)"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+        <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#FFC93C"/><rect x="7" y="9" width="14" height="3" rx="1.5" fill="#0B1F3A"/><rect x="7" y="14.5" width="10" height="3" rx="1.5" fill="#0B1F3A"/><rect x="12" y="20" width="13" height="3" rx="1.5" fill="#0B1F3A"/></svg><span>Lega<span class="drift">Drift</span></span></a>
         <p style="margin-top:12px; max-width:28em">L'outil de migration depuis le mainframe, d'une source vers plusieurs cibles, avec la preuve de ce que fait votre système.</p>
       </div>
       <div>
