@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sécurité et données · LegaDrift</title>
+<meta name="description" content="Comment LegaDrift traite votre code source, vos données et vos accès : où il s'exécute, ce qui part au modèle d'IA, pseudonymisation, rôles, traçabilité.">
+<link rel="canonical" href="https://legadrift.com/securite.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LegaDrift">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Sécurité et données · LegaDrift">
+<meta property="og:description" content="Comment LegaDrift traite votre code source, vos données et vos accès : où il s'exécute, ce qui part au modèle d'IA, pseudonymisation, rôles, traçabilité.">
+<meta property="og:url" content="https://legadrift.com/securite.html">
+<meta property="og:image" content="https://legadrift.com/assets/partage.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF7F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201B16" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--band)"/><rect x="6" y="8" width="16" height="3" rx="1.5" fill="var(--band-text)"/><rect x="6" y="14.5" width="12" height="3" rx="1.5" fill="var(--band-text)"/><rect x="12" y="21" width="14" height="3" rx="1.5" fill="var(--band-accent)"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="produit.html">Produit</a></li>
+        <li><a href="offre.html">Offre et déploiement</a></li>
+        <li><a href="securite.html" aria-current="page">Sécurité et données</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-small nav-cta" href="contact.html">Nous contacter</a>
+  </div>
+</header>
+<main id="contenu">
+<div class="wrap page-head">
+  <span class="eyebrow">Sécurité et données</span>
+  <h1>Votre code source est un actif sensible. LegaDrift le traite comme tel.</h1>
+  <p class="lede">Ce que LegaDrift fait de votre code, de vos données et de vos accès, dit précisément, pour que votre RSSI puisse l'examiner.</p>
+</div>
+
+<section class="section" style="padding-top:24px">
+  <div class="wrap">
+
+    <div class="stage">
+      <div class="stage-head"><span class="eyebrow">Le code source</span><h2>Il reste où vous le décidez</h2></div>
+      <div class="stage-body features two">
+        <div class="feature"><h3>Le lieu d'exécution est votre choix</h3><p>Sur votre infrastructure, dans votre compte cloud ou chez LegaDrift. Installé chez vous, LegaDrift ne renvoie rien vers LegaDrift.</p></div>
+        <div class="feature"><h3>Rien ne part sans votre accord</h3><p>Aucun code ne part vers un modèle d'IA situé hors de votre périmètre sans un acte positif de votre part, et cet acte est tracé.</p></div>
+        <div class="feature"><h3>Ce qui part au modèle reste visible</h3><p>Vos équipes habilitées peuvent consulter ce qui a été envoyé au modèle d'IA, projet par projet.</p></div>
+        <div class="feature"><h3>Le code n'est jamais exécuté</h3><p>LegaDrift lit le code ; il n'exécute ni le code d'origine ni le code produit par un moteur de conversion.</p></div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><span class="eyebrow">Vos données</span><h2>Elles ne transitent pas par LegaDrift</h2></div>
+      <div class="stage-body features two">
+        <div class="feature"><h3>Pas d'accès à la production</h3><p>LegaDrift n'extrait rien de votre production et n'y agit jamais. Il produit les paramétrages, vos équipes les installent.</p></div>
+        <div class="feature"><h3>Les données de production restent chez vous</h3><p>Pour la migration des données, LegaDrift prépare les travaux et les configurations ; vos données ne passent pas par lui.</p></div>
+        <div class="feature"><h3>Pseudonymisation par défaut</h3><p>Les identifiants de personnes sont pseudonymisés par défaut dans tout ce qui sort de votre périmètre et dans les données d'exécution que vous déposez.</p></div>
+        <div class="feature"><h3>Durée de conservation</h3><p>Fixée projet par projet, jamais illimitée par défaut. Un conflit entre conservation et effacement est affiché, pas masqué.</p></div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><span class="eyebrow">Les accès</span><h2>Chacun son rôle, chaque geste tracé</h2></div>
+      <div class="stage-body features two">
+        <div class="feature"><h3>Projets cloisonnés</h3><p>Chaque projet est isolé. Aucun accès n'existe en dehors d'un projet.</p></div>
+        <div class="feature"><h3>Rôles nommés</h3><p>Administrateur, analyste, valideur et les autres rôles du projet sont attribués à des personnes nommées, avec des permissions distinctes.</p></div>
+        <div class="feature"><h3>Contrôle à quatre yeux</h3><p>La validation d'un livrable par la personne qui l'a produit est signalée, et une dérogation est tracée.</p></div>
+        <div class="feature"><h3>Agents et outils tiers</h3><p>Un agent d'IA ou un outil n'accède au projet qu'avec un jeton nominatif, limité à une portée, révocable, et ses lectures sont journalisées.</p></div>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-head"><span class="eyebrow">La traçabilité</span><h2>Ce qui a été décidé, par qui et quand</h2></div>
+      <div class="stage-body features two">
+        <div class="feature"><h3>Un journal vérifiable</h3><p>Chaque geste est inscrit dans un journal chaîné. Un auditeur peut en vérifier l'intégrité avec des outils standards, sans accès au produit.</p></div>
+        <div class="feature"><h3>Valider, puis figer</h3><p>Un livrable <span class="status status-valide">validé</span> puis <span class="status status-fige">figé</span> est verrouillé dans l'application. Seuls l'effacement de données personnelles et la suppression du projet peuvent encore le toucher, et ces actes sont tracés.</p></div>
+        <div class="feature"><h3>Les choix du projet consignés</h3><p>Infrastructure, modèle d'IA, fournisseur, durée de conservation : chaque choix est enregistré avec sa date et son auteur.</p></div>
+        <div class="feature"><h3>Exports pour vos audits</h3><p>Le journal, les choix du projet et les livrables figés s'exportent pour l'examen de vos équipes de sécurité et de vos auditeurs.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    <div class="callout">
+      <p><strong>Ce que nous ne prétendons pas.</strong> LegaDrift ne détient aujourd'hui aucune certification de sécurité. Nous ne présentons pas le produit comme une garantie réglementaire : nous vous donnons les éléments précis pour que vos équipes jugent par elles-mêmes, et nous répondons à leurs questionnaires.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section band cta-band">
+  <div class="wrap cta-box">
+    <div style="display:grid; gap:10px">
+      <h2>Une question de votre RSSI ?</h2>
+      <p class="muted">Nous y répondons point par point.</p>
+    </div>
+    <a class="btn btn-primary" href="contact.html">Nous écrire</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--band)"/><rect x="6" y="8" width="16" height="3" rx="1.5" fill="var(--band-text)"/><rect x="6" y="14.5" width="12" height="3" rx="1.5" fill="var(--band-text)"/><rect x="12" y="21" width="14" height="3" rx="1.5" fill="var(--band-accent)"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+        <p style="margin-top:12px; max-width:28em">L'outil de migration depuis le mainframe, d'une source vers plusieurs cibles, avec la preuve de ce que fait votre système.</p>
+      </div>
+      <div>
+        <h2>Le produit</h2>
+        <ul>
+          <li><a href="produit.html">Produit</a></li>
+          <li><a href="offre.html">Offre et déploiement</a></li>
+          <li><a href="securite.html">Sécurité et données</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>La société</h2>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 LEGADRIFT SASU</span>
+      <span>RCS Versailles 109 268 631</span>
+      <span>Ce site ne dépose aucun cookie.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

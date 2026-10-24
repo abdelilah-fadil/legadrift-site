@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LegaDrift</title>
+<meta name="description" content="LegaDrift est un outil de migration depuis le mainframe (COBOL, JCL, Db2, IMS, CICS, IBM i) : il explique la logique métier du patrimoine et le conduit vers une ou plusieurs cibles, en partie ou en totalité.">
+<link rel="canonical" href="https://legadrift.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LegaDrift">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="LegaDrift">
+<meta property="og:description" content="LegaDrift est un outil de migration depuis le mainframe (COBOL, JCL, Db2, IMS, CICS, IBM i) : il explique la logique métier du patrimoine et le conduit vers une ou plusieurs cibles, en partie ou en totalité.">
+<meta property="og:url" content="https://legadrift.com/">
+<meta property="og:image" content="https://legadrift.com/assets/partage.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF7F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#201B16" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--band)"/><rect x="6" y="8" width="16" height="3" rx="1.5" fill="var(--band-text)"/><rect x="6" y="14.5" width="12" height="3" rx="1.5" fill="var(--band-text)"/><rect x="12" y="21" width="14" height="3" rx="1.5" fill="var(--band-accent)"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="produit.html">Produit</a></li>
+        <li><a href="offre.html">Offre et déploiement</a></li>
+        <li><a href="securite.html">Sécurité et données</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-small nav-cta" href="contact.html">Nous contacter</a>
+  </div>
+</header>
+<main id="contenu">
+<div class="wrap hero">
+  <div class="hero-text">
+    <span class="eyebrow">Une source mainframe, plusieurs cibles</span>
+    <h1>Migrez votre patrimoine mainframe vers une ou plusieurs cibles, avec la preuve que rien ne s'est perdu.</h1>
+    <p class="lede">LegaDrift est un outil de migration depuis le mainframe. Il lit votre patrimoine, explique en langage métier ce que fait chaque traitement et conduit chaque lot vers sa cible : une application vers Java, une autre vers .NET, des données vers une nouvelle base. À chaque étape, chaque affirmation garde sa preuve.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="contact.html">Parler de votre projet</a>
+      <a class="btn btn-ghost" href="produit.html">Découvrir le produit</a>
+    </div>
+  </div>
+
+  <figure class="listing" aria-label="Exemple : un extrait de programme COBOL et ce que LegaDrift en dit">
+    <div class="listing-bar"><span>CALCECH.cbl</span><span>exemple</span></div>
+<pre><span class="ln">000310</span>    PROCEDURE DIVISION.
+<span class="ln">000320</span>    0000-CALCUL-ECHEANCE.
+<span class="hl"><span class="ln">000330</span>        EXEC SQL SELECT TAUX INTO :WS-TAUX</span>
+<span class="hl"><span class="ln">000340</span>             FROM TARIF WHERE CODE = :WS-CODE</span>
+<span class="ln">000350</span>        END-EXEC
+<span class="ln">000360</span>        IF WS-NB-CONTRATS &gt; 3
+<span class="ln">000370</span>           COMPUTE WS-REMISE = WS-MONTANT * 0.05
+<span class="ln">000380</span>        END-IF.</pre>
+    <div class="listing-out">
+      <div class="row"><span class="k">Lancé par</span><span>job FACTMENS, étape STEP030 <span class="status status-prouve">prouvé · JCL l. 42</span></span></div>
+      <div class="row"><span class="k">Lit</span><span>table TARIF (Db2) <span class="status status-prouve">prouvé · l. 000330</span></span></div>
+      <div class="row"><span class="k">Règle</span><span>remise de 5 % au-delà de trois contrats <span class="status status-suppose">supposé · à valider</span></span></div>
+      <div class="row"><span class="k">Domaine</span><span>Facturation <span class="status status-valide">validé</span></span></div>
+    </div>
+    <figcaption class="listing-caption">Ce qui est prouvé porte sa source. Ce qui est supposé attend qu'une personne le valide.</figcaption>
+  </figure>
+</div>
+
+<section class="section band">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Notre offre</span>
+      <h2>Trois partis pris pour une migration que vous pouvez défendre</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <h3>La parité, démontrée</h3>
+        <p>Le nouveau système doit faire ce que faisait l'ancien. LegaDrift relève les règles de l'existant, compare les sorties que les deux systèmes produisent et garde la trace de ce qui a été vérifié, par qui et quand.</p>
+      </div>
+      <div class="pillar">
+        <h3>Une source, plusieurs cibles</h3>
+        <p>Un même patrimoine peut partir vers plusieurs cibles : Java, .NET, une nouvelle base de données, un cloud public ou privé, un autre mainframe. LegaDrift ne vend aucune cible et ne vous lie à aucun fournisseur.</p>
+      </div>
+      <div class="pillar">
+        <h3>De bout en bout</h3>
+        <p>De la cartographie de l'existant à la bascule, un seul projet réunit l'analyse, la conception de la cible, la migration des données et la recette.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Le parcours</span>
+      <h2>Ce que LegaDrift prend en charge, étape par étape</h2>
+      <p>Une migration ne suit jamais deux fois le même chemin. Vous composez le vôtre à partir de ces étapes, dans l'ordre qui convient à votre projet.</p>
+    </div>
+    <ol class="journey">
+      <li><span class="n">01</span><h3>Cartographier</h3><p>Inventaire des programmes, jobs, tables, fichiers et transactions, avec ce que l'analyse n'a pas su lire.</p></li>
+      <li><span class="n">02</span><h3>Comprendre</h3><p>Logique métier expliquée, circulation des données, règles de gestion, analyse d'impact.</p></li>
+      <li><span class="n">03</span><h3>Découper</h3><p>Domaines fonctionnels et lots de migration cohérents, chaque rattachement relié à sa preuve.</p></li>
+      <li><span class="n">04</span><h3>Concevoir la cible</h3><p>Écarts avec la cible, correspondances, proposition d'architecture et chiffrage argumenté.</p></li>
+      <li><span class="n">05</span><h3>Transformer</h3><p>Le moteur de conversion de votre choix, branché sur le projet ; chaque sortie validée par une personne nommée.</p></li>
+      <li><span class="n">06</span><h3>Migrer les données</h3><p>Correspondances de données et paramétrages des outils de migration, préparés et tracés.</p></li>
+      <li><span class="n">07</span><h3>Recetter</h3><p>Jeux d'essai, comparaison des sorties de l'ancien et du nouveau système, tableau des écarts.</p></li>
+      <li><span class="n">08</span><h3>Basculer et piloter</h3><p>Coexistence, plan de vagues, suivi de chaque chantier depuis ce qui a été livré.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="section-head" style="margin-bottom:0">
+      <span class="eyebrow">Ce qui est analysé</span>
+      <h2>Les sources d'un vrai patrimoine, pas seulement le COBOL</h2>
+      <p>Un fichier qu'aucun lecteur ne sait encore lire est nommé comme tel, avec la raison. Il n'est jamais compté comme analysé, ni pris pour du code mort.</p>
+      <p><a href="produit.html#sources">Voir le détail des sources</a></p>
+    </div>
+    <div style="display:grid; gap:20px; align-content:start">
+      <div><h3 style="font-size:15px; margin-bottom:10px">IBM Z (z/OS)</h3>
+        <ul class="chips"><li>COBOL</li><li>JCL</li><li>Db2</li><li>CICS</li><li>BMS</li><li>IMS DB et DC</li><li>VSAM</li><li>PL/I</li><li>Assembleur</li><li>Natural et Adabas</li><li>REXX et CLIST</li><li>MQ</li><li>Fortran</li><li>IWS, CA-7</li></ul>
+      </div>
+      <div><h3 style="font-size:15px; margin-bottom:10px">IBM i</h3>
+        <ul class="chips"><li>RPG</li><li>CL</li><li>DDS</li><li>Db2 for i</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Où tourne l'analyse</span>
+      <h2>Votre code reste là où vous le décidez</h2>
+      <p>Vous choisissez où LegaDrift s'exécute et, séparément, quel modèle d'IA l'éclaire. Ces deux choix valent pour tout le projet et sont consignés.</p>
+    </div>
+    <div class="modes">
+      <div class="mode"><span class="tag">Chez vous</span><h3>Sur votre infrastructure</h3><p>LegaDrift s'installe dans vos murs et l'analyse se fait avec vos moyens.</p></div>
+      <div class="mode"><span class="tag">Votre cloud</span><h3>Dans votre compte cloud</h3><p>Une instance qui vous est réservée, dans votre environnement, exploitée par LegaDrift si vous le souhaitez.</p></div>
+      <div class="mode"><span class="tag">Hébergé</span><h3>Chez LegaDrift</h3><p>Pour démarrer sans rien installer, avec un hébergement européen proposé par défaut.</p></div>
+    </div>
+    <p style="margin-top:20px"><a href="securite.html">Comment LegaDrift traite votre code et vos données</a></p>
+  </div>
+</section>
+
+<section class="section band cta-band">
+  <div class="wrap cta-box">
+    <div style="display:grid; gap:10px">
+      <h2>Un patrimoine mainframe à migrer, en partie ou en totalité ?</h2>
+      <p class="muted">Nous préparons nos premiers projets pilotes. Parlons de votre contexte.</p>
+    </div>
+    <a class="btn btn-primary" href="contact.html">Nous contacter</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--band)"/><rect x="6" y="8" width="16" height="3" rx="1.5" fill="var(--band-text)"/><rect x="6" y="14.5" width="12" height="3" rx="1.5" fill="var(--band-text)"/><rect x="12" y="21" width="14" height="3" rx="1.5" fill="var(--band-accent)"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+        <p style="margin-top:12px; max-width:28em">L'outil de migration depuis le mainframe, d'une source vers plusieurs cibles, avec la preuve de ce que fait votre système.</p>
+      </div>
+      <div>
+        <h2>Le produit</h2>
+        <ul>
+          <li><a href="produit.html">Produit</a></li>
+          <li><a href="offre.html">Offre et déploiement</a></li>
+          <li><a href="securite.html">Sécurité et données</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>La société</h2>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 LEGADRIFT SASU</span>
+      <span>RCS Versailles 109 268 631</span>
+      <span>Ce site ne dépose aucun cookie.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
