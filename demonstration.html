@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Démonstration · LegaDrift</title>
+<meta name="description" content="Visite guidée de LegaDrift en vidéo et en captures d'écran, sur AWS CardDemo, une application COBOL publique : inventaire, graphe, organigramme, écarts avec la cible, validation et projet de migration.">
+<link rel="canonical" href="https://legadrift.com/demonstration.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LegaDrift">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Démonstration · LegaDrift">
+<meta property="og:description" content="Visite guidée de LegaDrift en vidéo et en captures d'écran, sur AWS CardDemo, une application COBOL publique : inventaire, graphe, organigramme, écarts avec la cible, validation et projet de migration.">
+<meta property="og:url" content="https://legadrift.com/demonstration.html">
+<meta property="og:image" content="https://legadrift.com/assets/partage.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#FFC93C"/><rect x="7" y="9" width="14" height="3" rx="1.5" fill="#0B1F3A"/><rect x="7" y="14.5" width="10" height="3" rx="1.5" fill="#0B1F3A"/><rect x="12" y="20" width="13" height="3" rx="1.5" fill="#0B1F3A"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="demonstration.html" aria-current="page">Démonstration</a></li>
+        <li><a href="produit.html">Produit</a></li>
+        <li><a href="offre.html">Offre et déploiement</a></li>
+        <li><a href="securite.html">Sécurité et données</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-small nav-cta" href="contact.html">Nous contacter</a>
+  </div>
+</header>
+<main id="contenu">
+<div class="wrap page-head">
+  <span class="eyebrow">Démonstration</span>
+  <h1>LegaDrift à l'œuvre sur une vraie application COBOL</h1>
+  <p class="lede">Toutes les images de cette page viennent de l'outil, lancé sur AWS CardDemo : une application de cartes bancaires en COBOL, CICS et JCL, publiée par AWS sous licence Apache-2.0. Aucune donnée client, aucun chiffre ajouté à la main.</p>
+</div>
+
+<section class="section" id="video" style="padding-top:56px">
+  <div class="wrap">
+    <figure class="shot">
+      <div class="shot-frame">
+        <div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Visite guidée · 2 minutes</span></div>
+        <video controls preload="none" playsinline width="1280" height="800" poster="assets/outil/visite-guidee.webp" aria-label="Visite guidée de LegaDrift sur AWS CardDemo, sous-titrée, sans son">
+          <source src="assets/outil/visite-guidee.mp4" type="video/mp4">
+          <a href="assets/outil/visite-guidee.mp4">Télécharger la vidéo de la visite guidée</a>
+        </video>
+      </div>
+      <figcaption>Vidéo sans son, sous-titrée en français. Le parcours suit les cinq étapes décrites plus bas, puis le projet de migration.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Écran par écran</span>
+      <h2>Ce que vous faites avec LegaDrift, dans l'ordre</h2>
+      <p>Cliquez une capture pour la voir en grand.</p>
+    </div>
+
+    <div class="tour">
+      <div class="tour-step" id="etape-1">
+        <div class="tour-text">
+          <span class="tour-n" aria-hidden="true">1</span>
+          <h3>Déposez les sources</h3>
+          <p>Vous déposez le code tel qu'il sort du mainframe : programmes, copybooks, JCL, définitions Db2 et CICS, export de l'ordonnanceur. LegaDrift compte ce qu'il a lu et nomme ce qui manque.</p>
+          <p class="muted">Sur CardDemo : 34 programmes, 51 copybooks, 41 jobs JCL, 18 986 lignes. Huit composants sont appelés sans que leur source ait été fournie : ils sont signalés, pas ignorés.</p>
+        </div>
+        <figure class="shot">
+          <a class="shot-frame" href="assets/outil/inventaire.webp"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Vue d'ensemble</span></div><img src="assets/outil/inventaire.webp" width="2000" height="861" loading="lazy" alt="Capture de LegaDrift : vue d'ensemble de CardDemo, avec 34 programmes, 51 copybooks, 3 tables Db2, 41 jobs JCL, 18 986 lignes de code et 8 composants manquants, puis la répartition des composants et des relations"></a>
+          <figcaption>Vue d'ensemble du patrimoine CardDemo.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tour-step" id="etape-2">
+        <div class="tour-text">
+          <span class="tour-n" aria-hidden="true">2</span>
+          <h3>Voyez comment tout s'enchaîne</h3>
+          <p>Chaque programme, job, fichier et table devient un point du graphe ; chaque lien vient d'une ligne de code. Un clic sur un programme affiche sa fiche et tout ce qu'il touche.</p>
+          <p class="muted">Ici CBTRN02C : 619 lignes, ses fichiers et ses copybooks. Les appels que l'analyse n'a pas su résoudre sont marqués comme tels, avec leur nombre.</p>
+        </div>
+        <figure class="shot">
+          <a class="shot-frame" href="assets/outil/graphe.webp"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Graphe</span></div><img src="assets/outil/graphe.webp" width="2000" height="1019" loading="lazy" alt="Capture de LegaDrift : le graphe de CardDemo centré sur le programme CBTRN02C, relié à ses fichiers et copybooks, avec à droite sa fiche (lignes de code, complexité, composants impactés, appels non résolus)"></a>
+          <figcaption>Le graphe, et la fiche d'impact d'un programme.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tour-step" id="etape-3">
+        <div class="tour-text">
+          <span class="tour-n" aria-hidden="true">3</span>
+          <h3>Comprenez chaque programme</h3>
+          <p>Pour chaque programme, vous lisez le texte d'origine, la vue développée (copybooks et procédures remis à leur place) et l'organigramme tiré du code : paragraphes, enchaînements, appels.</p>
+          <p class="muted">L'organigramme de CBACT01C montre ses 16 paragraphes et un appel vers COBDATFT, dont la source n'a pas été déposée. Chaque case renvoie à son numéro de ligne.</p>
+        </div>
+        <figure class="shot">
+          <a class="shot-frame" href="assets/outil/organigramme.webp"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Patrimoine · CBACT01C.cbl</span></div><img src="assets/outil/organigramme.webp" width="2000" height="1659" loading="lazy" alt="Capture de LegaDrift : organigramme du programme CBACT01C, ses paragraphes reliés par des PERFORM, et un appel vers COBDATFT marqué non déposé"></a>
+          <figcaption>L'organigramme d'un programme, avec sa légende.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tour-step" id="etape-4">
+        <div class="tour-text">
+          <span class="tour-n" aria-hidden="true">4</span>
+          <h3>Choisissez une ou plusieurs cibles</h3>
+          <p>Vous choisissez la cible : Java, .NET, un mainframe modernisé. LegaDrift liste ce qui ne passera pas tel quel et, pour chaque écart, les lignes qui le prouvent et la piste pour le traiter.</p>
+          <p class="muted">Vers Java et PostgreSQL : 154 écarts, dont 7 sur le décimal condensé (COMP-3), 8 sur des GO TO et 39 JCL à réécrire. CBSTM03A, par exemple, utilise 14 fois GO TO : chaque ligne est citée.</p>
+        </div>
+        <figure class="shot">
+          <a class="shot-frame" href="assets/outil/ecarts.webp"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Analyse d'écart · Java / PostgreSQL</span></div><img src="assets/outil/ecarts.webp" width="2000" height="1396" loading="lazy" alt="Capture de LegaDrift : analyse d'écart de CardDemo vers Java et PostgreSQL, 154 écarts répartis par règle, et le détail d'un écart sur CBSTM03A avec la liste des lignes qui le prouvent"></a>
+          <figcaption>Les écarts avec la cible, chacun avec sa preuve.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tour-step" id="etape-5">
+        <div class="tour-text">
+          <span class="tour-n" aria-hidden="true">5</span>
+          <h3>Une personne valide, puis fige</h3>
+          <p>Les composants sont regroupés en blocs fonctionnels, un par traitement métier. Un valideur accepte chaque bloc, avec ou sans réserve, puis le fige : sa version ne change plus.</p>
+          <p class="muted">Ce qui est prouvé par le code reste séparé de ce qui est supposé. Chaque décision porte un nom, une date et une empreinte, inscrits au registre des actes.</p>
+        </div>
+        <figure class="shot">
+          <a class="shot-frame" href="assets/outil/validation.webp"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Validations · fiche de décision</span></div><img src="assets/outil/validation.webp" width="1966" height="1090" loading="lazy" alt="Capture de LegaDrift : fiche de décision d'un bloc figé, validé avec une réserve, avec son empreinte, et le décompte des rattachements prouvés et supposés"></a>
+          <figcaption>La fiche d'un bloc validé avec réserve, puis figé.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tour-step wide" id="etape-6">
+        <div class="tour-text">
+          <span class="tour-n" aria-hidden="true">→</span>
+          <h3>Composez le projet de migration</h3>
+          <p>Le projet se construit comme un plan, brique par brique : des sources jusqu'à la bascule, en passant par la conversion des programmes, la migration des données et la recette. Chaque brique dit ce qu'elle consomme, ce qu'elle produit et ce qui lui manque encore.</p>
+        </div>
+        <figure class="shot">
+          <a class="shot-frame" href="assets/outil/canevas.webp"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i><span>Projet de migration · canevas</span></div><img src="assets/outil/canevas.webp" width="2000" height="437" loading="lazy" alt="Capture de LegaDrift : le canevas du projet de migration de CardDemo, des sources mainframe à l'extraction des process métier, la conversion des programmes, le mapping et la migration des données, la recette et la bascule"></a>
+          <figcaption>Le projet de migration de CardDemo, des sources à la bascule.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="callout">
+      <h3>Ce que cette démonstration ne montre pas</h3>
+      <p>Elle tourne sans modèle d'IA et sans moteur de conversion branché. Les explications en langage métier, les réponses aux questions et la conversion du code n'y apparaissent donc pas : ces deux choix se font avec vous, pour votre projet, et sont consignés. Tout ce que vous voyez ici vient des analyseurs.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-box">
+    <div style="display:grid; gap:10px">
+      <h2>Voir LegaDrift sur votre propre patrimoine ?</h2>
+      <p class="muted">Nous préparons nos premiers projets pilotes. Parlons de votre contexte.</p>
+    </div>
+    <a class="btn btn-primary" href="contact.html">Nous contacter</a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="wordmark" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#FFC93C"/><rect x="7" y="9" width="14" height="3" rx="1.5" fill="#0B1F3A"/><rect x="7" y="14.5" width="10" height="3" rx="1.5" fill="#0B1F3A"/><rect x="12" y="20" width="13" height="3" rx="1.5" fill="#0B1F3A"/></svg><span>Lega<span class="drift">Drift</span></span></a>
+        <p style="margin-top:12px; max-width:28em">L'outil de migration depuis le mainframe, d'une source vers plusieurs cibles, avec la preuve de ce que fait votre système.</p>
+      </div>
+      <div>
+        <h2>Le produit</h2>
+        <ul>
+          <li><a href="demonstration.html">Démonstration</a></li>
+          <li><a href="produit.html">Produit</a></li>
+          <li><a href="offre.html">Offre et déploiement</a></li>
+          <li><a href="securite.html">Sécurité et données</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>La société</h2>
+        <ul>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 LEGADRIFT SASU</span>
+      <span>RCS Versailles 109 268 631</span>
+      <span>Ce site ne dépose aucun cookie.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
